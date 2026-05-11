@@ -4,8 +4,6 @@
  */
 package crud_bicicletas_2026.model;
 
-import java.math.BigDecimal;
-
 /**
  *
  * @author cadul
@@ -17,12 +15,13 @@ public class Bicicleta {
     private String tipo;
     private int numeroMarchas;
     private double aro;
-    private BigDecimal preco;
+    private Preco preco;
     private int anoFabricacao;
     
     public Bicicleta(){}
     
-    public Bicicleta(int id, String marca, String modelo, String tipo, int numeroMarchas, double aro, BigDecimal preco, int anoFabricacao) {
+    public Bicicleta(int id, String marca, String modelo, String tipo,
+                 int numeroMarchas, double aro, Preco preco, int anoFabricacao) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
@@ -75,10 +74,10 @@ public class Bicicleta {
         this.aro = aro; 
     }
 
-    public BigDecimal getPreco() { 
+    public Preco getPreco() {  
         return preco; 
     }
-    public void setPreco(BigDecimal preco) { 
+    public void setPreco(Preco preco) { 
         this.preco = preco; 
     }
 

@@ -14,8 +14,8 @@ import java.sql.SQLException;
  */
 public class GerenciadorConexao {
     private static final String URL = "jdbc:postgresql://localhost:5432/bicicletaria";
-    private static final String user = "admin";
-    private static final String pass = "admin";
+    private static final String user = "laudosapp";
+    private static final String pass = "laudosapp";
     
     public static Connection getConexao() throws SQLException {
         return DriverManager.getConnection(URL, user, pass);
